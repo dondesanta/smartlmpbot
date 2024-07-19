@@ -1,0 +1,603 @@
+{
+    "status": "ok",
+    "request_id": "44a4f4cd-346d-4a00-9a92-e9a0ed5923ef",
+    "rooms": [
+        {
+            "id": "c4a79b41-cb31-49c6-892f-3b518343d091",
+            "name": "Спальня",
+            "household_id": "6ab6c4ae-a77b-477e-8a32-e070094192a8",
+            "devices": [
+                "329dcb5d-1ff7-4037-a790-9079321c7780",
+                "61b6a837-8023-4aa3-a3fc-37ece478fcb2",
+                "b2f2ba8f-cc37-4670-ae46-285e9d9e9139",
+                "c7f4c77d-53db-4a0d-99ea-5e28d89712b5"
+            ]
+        }
+    ],
+    "groups": [
+        {
+            "id": "7f5833a0-0ac2-4cbb-afff-3619e8ca222d",
+            "name": "холаааа",
+            "aliases": [],
+            "household_id": "6ab6c4ae-a77b-477e-8a32-e070094192a8",
+            "type": "devices.types.light",
+            "devices": [
+                "329dcb5d-1ff7-4037-a790-9079321c7780"
+            ],
+            "capabilities": [
+                {
+                    "retrievable": true,
+                    "type": "devices.capabilities.color_setting",
+                    "parameters": {
+                        "color_model": "hsv",
+                        "temperature_k": {
+                            "min": 2700,
+                            "max": 6500
+                        }
+                    },
+                    "state": {
+                        "instance": "hsv",
+                        "value": {
+                            "h": 280,
+                            "s": 96,
+                            "v": 100
+                        }
+                    }
+                },
+                {
+                    "retrievable": true,
+                    "type": "devices.capabilities.on_off",
+                    "parameters": {
+                        "split": false
+                    },
+                    "state": {
+                        "instance": "on",
+                        "value": true
+                    }
+                },
+                {
+                    "retrievable": true,
+                    "type": "devices.capabilities.range",
+                    "parameters": {
+                        "instance": "brightness",
+                        "unit": "unit.percent",
+                        "random_access": true,
+                        "looped": false,
+                        "range": {
+                            "min": 1,
+                            "max": 100,
+                            "precision": 11
+                        }
+                    },
+                    "state": {
+                        "instance": "brightness",
+                        "value": 100
+                    }
+                },
+                {
+                    "retrievable": false,
+                    "type": "devices.capabilities.mode",
+                    "parameters": {
+                        "instance": "thermostat",
+                        "modes": [
+                            {
+                                "value": "heat"
+                            },
+                            {
+                                "value": "cool"
+                            },
+                            {
+                                "value": "auto"
+                            },
+                            {
+                                "value": "dry"
+                            },
+                            {
+                                "value": "fan_only"
+                            },
+                            {
+                                "value": "preheat"
+                            }
+                        ]
+                    },
+                    "state": null
+                }
+            ]
+        },
+        {
+            "id": "ec25ee05-f454-4240-a6ee-2816e73b4c87",
+            "name": "ТЕСТ",
+            "aliases": [],
+            "household_id": "6ab6c4ae-a77b-477e-8a32-e070094192a8",
+            "type": "devices.types.light",
+            "devices": [
+                "61b6a837-8023-4aa3-a3fc-37ece478fcb2",
+                "b2f2ba8f-cc37-4670-ae46-285e9d9e9139",
+                "c7f4c77d-53db-4a0d-99ea-5e28d89712b5"
+            ],
+            "capabilities": [
+                {
+                    "retrievable": true,
+                    "type": "devices.capabilities.color_setting",
+                    "parameters": {
+                        "color_model": "hsv",
+                        "temperature_k": {
+                            "min": 2700,
+                            "max": 6500
+                        }
+                    },
+                    "state": {
+                        "instance": "temperature_k",
+                        "value": 6500
+                    }
+                },
+                {
+                    "retrievable": true,
+                    "type": "devices.capabilities.on_off",
+                    "parameters": {
+                        "split": false
+                    },
+                    "state": {
+                        "instance": "on",
+                        "value": false
+                    }
+                },
+                {
+                    "retrievable": true,
+                    "type": "devices.capabilities.range",
+                    "parameters": {
+                        "instance": "brightness",
+                        "unit": "unit.percent",
+                        "random_access": true,
+                        "looped": false,
+                        "range": {
+                            "min": 1,
+                            "max": 100,
+                            "precision": 11
+                        }
+                    },
+                    "state": {
+                        "instance": "brightness",
+                        "value": 100
+                    }
+                },
+                {
+                    "retrievable": false,
+                    "type": "devices.capabilities.mode",
+                    "parameters": {
+                        "instance": "thermostat",
+                        "modes": [
+                            {
+                                "value": "cool",
+                                "name": "Охлаждение"
+                            },
+                            {
+                                "value": "heat",
+                                "name": "Нагрев"
+                            },
+                            {
+                                "value": "fan_only",
+                                "name": "Вентиляция"
+                            },
+                            {
+                                "value": "dry",
+                                "name": "Осушение"
+                            },
+                            {
+                                "value": "auto",
+                                "name": "Авто"
+                            },
+                            {
+                                "value": "preheat",
+                                "name": "Подогрев"
+                            }
+                        ]
+                    },
+                    "state": null
+                }
+            ]
+        }
+    ],
+    "devices": [
+        {
+            "id": "329dcb5d-1ff7-4037-a790-9079321c7780",
+            "name": "Стол",
+            "aliases": [],
+            "type": "devices.types.light",
+            "external_id": "bf9732d547d78b2e42njau",
+            "skill_id": "2b43bda8-d721-42a6-bf54-9e1e771093c2",
+            "household_id": "6ab6c4ae-a77b-477e-8a32-e070094192a8",
+            "room": "c4a79b41-cb31-49c6-892f-3b518343d091",
+            "groups": [
+                "7f5833a0-0ac2-4cbb-afff-3619e8ca222d"
+            ],
+            "capabilities": [
+                {
+                    "reportable": false,
+                    "retrievable": true,
+                    "type": "devices.capabilities.color_setting",
+                    "parameters": {
+                        "color_model": "hsv",
+                        "temperature_k": {
+                            "min": 2700,
+                            "max": 6500
+                        }
+                    },
+                    "state": {
+                        "instance": "hsv",
+                        "value": {
+                            "h": 280,
+                            "s": 96,
+                            "v": 100
+                        }
+                    },
+                    "last_updated": 1704540793.9768922
+                },
+                {
+                    "reportable": false,
+                    "retrievable": true,
+                    "type": "devices.capabilities.on_off",
+                    "parameters": {
+                        "split": false
+                    },
+                    "state": {
+                        "instance": "on",
+                        "value": true
+                    },
+                    "last_updated": 1704561018.8433716
+                },
+                {
+                    "reportable": false,
+                    "retrievable": true,
+                    "type": "devices.capabilities.range",
+                    "parameters": {
+                        "instance": "brightness",
+                        "unit": "unit.percent",
+                        "random_access": true,
+                        "looped": false,
+                        "range": {
+                            "min": 1,
+                            "max": 100,
+                            "precision": 11
+                        }
+                    },
+                    "state": {
+                        "instance": "brightness",
+                        "value": 100
+                    },
+                    "last_updated": 1704560915.6197004
+                },
+                {
+                    "reportable": false,
+                    "retrievable": false,
+                    "type": "devices.capabilities.mode",
+                    "parameters": {
+                        "instance": "thermostat",
+                        "modes": [
+                            {
+                                "value": "heat"
+                            },
+                            {
+                                "value": "cool"
+                            },
+                            {
+                                "value": "auto"
+                            },
+                            {
+                                "value": "dry"
+                            },
+                            {
+                                "value": "fan_only"
+                            },
+                            {
+                                "value": "preheat"
+                            }
+                        ]
+                    },
+                    "state": null,
+                    "last_updated": 0.0
+                }
+            ],
+            "properties": []
+        },
+        {
+            "id": "61b6a837-8023-4aa3-a3fc-37ece478fcb2",
+            "name": "Лампа",
+            "aliases": [],
+            "type": "devices.types.light",
+            "external_id": "bfd47231b468669648en9n",
+            "skill_id": "2b43bda8-d721-42a6-bf54-9e1e771093c2",
+            "household_id": "6ab6c4ae-a77b-477e-8a32-e070094192a8",
+            "room": "c4a79b41-cb31-49c6-892f-3b518343d091",
+            "groups": [
+                "ec25ee05-f454-4240-a6ee-2816e73b4c87"
+            ],
+            "capabilities": [
+                {
+                    "reportable": false,
+                    "retrievable": true,
+                    "type": "devices.capabilities.color_setting",
+                    "parameters": {
+                        "color_model": "hsv",
+                        "temperature_k": {
+                            "min": 2700,
+                            "max": 6500
+                        }
+                    },
+                    "state": {
+                        "instance": "temperature_k",
+                        "value": 6500
+                    },
+                    "last_updated": 1700571418.8478608
+                },
+                {
+                    "reportable": false,
+                    "retrievable": true,
+                    "type": "devices.capabilities.on_off",
+                    "parameters": {
+                        "split": false
+                    },
+                    "state": {
+                        "instance": "on",
+                        "value": false
+                    },
+                    "last_updated": 1700572919.951552
+                },
+                {
+                    "reportable": false,
+                    "retrievable": true,
+                    "type": "devices.capabilities.range",
+                    "parameters": {
+                        "instance": "brightness",
+                        "unit": "unit.percent",
+                        "random_access": true,
+                        "looped": false,
+                        "range": {
+                            "min": 1,
+                            "max": 100,
+                            "precision": 11
+                        }
+                    },
+                    "state": {
+                        "instance": "brightness",
+                        "value": 100
+                    },
+                    "last_updated": 1700571414.41592
+                },
+                {
+                    "reportable": false,
+                    "retrievable": false,
+                    "type": "devices.capabilities.mode",
+                    "parameters": {
+                        "instance": "thermostat",
+                        "modes": [
+                            {
+                                "value": "heat"
+                            },
+                            {
+                                "value": "cool"
+                            },
+                            {
+                                "value": "auto"
+                            },
+                            {
+                                "value": "dry"
+                            },
+                            {
+                                "value": "fan_only"
+                            },
+                            {
+                                "value": "preheat"
+                            }
+                        ]
+                    },
+                    "state": null,
+                    "last_updated": 0.0
+                }
+            ],
+            "properties": []
+        },
+        {
+            "id": "b2f2ba8f-cc37-4670-ae46-285e9d9e9139",
+            "name": "Лампа",
+            "aliases": [],
+            "type": "devices.types.light",
+            "external_id": "bf0e4becec783d735cffb1",
+            "skill_id": "2b43bda8-d721-42a6-bf54-9e1e771093c2",
+            "household_id": "6ab6c4ae-a77b-477e-8a32-e070094192a8",
+            "room": "c4a79b41-cb31-49c6-892f-3b518343d091",
+            "groups": [
+                "ec25ee05-f454-4240-a6ee-2816e73b4c87"
+            ],
+            "capabilities": [
+                {
+                    "reportable": false,
+                    "retrievable": true,
+                    "type": "devices.capabilities.color_setting",
+                    "parameters": {
+                        "color_model": "hsv",
+                        "temperature_k": {
+                            "min": 2700,
+                            "max": 6500
+                        }
+                    },
+                    "state": {
+                        "instance": "temperature_k",
+                        "value": 6500
+                    },
+                    "last_updated": 1700571418.8478556
+                },
+                {
+                    "reportable": false,
+                    "retrievable": true,
+                    "type": "devices.capabilities.on_off",
+                    "parameters": {
+                        "split": false
+                    },
+                    "state": {
+                        "instance": "on",
+                        "value": false
+                    },
+                    "last_updated": 1700572919.9515474
+                },
+                {
+                    "reportable": false,
+                    "retrievable": true,
+                    "type": "devices.capabilities.range",
+                    "parameters": {
+                        "instance": "brightness",
+                        "unit": "unit.percent",
+                        "random_access": true,
+                        "looped": false,
+                        "range": {
+                            "min": 1,
+                            "max": 100,
+                            "precision": 11
+                        }
+                    },
+                    "state": {
+                        "instance": "brightness",
+                        "value": 100
+                    },
+                    "last_updated": 1700571414.4159145
+                },
+                {
+                    "reportable": false,
+                    "retrievable": false,
+                    "type": "devices.capabilities.mode",
+                    "parameters": {
+                        "instance": "thermostat",
+                        "modes": [
+                            {
+                                "value": "heat"
+                            },
+                            {
+                                "value": "cool"
+                            },
+                            {
+                                "value": "auto"
+                            },
+                            {
+                                "value": "dry"
+                            },
+                            {
+                                "value": "fan_only"
+                            },
+                            {
+                                "value": "preheat"
+                            }
+                        ]
+                    },
+                    "state": null,
+                    "last_updated": 0.0
+                }
+            ],
+            "properties": []
+        },
+        {
+            "id": "c7f4c77d-53db-4a0d-99ea-5e28d89712b5",
+            "name": "Лампа",
+            "aliases": [],
+            "type": "devices.types.light",
+            "external_id": "bf77ade932ab9454e8snzx",
+            "skill_id": "2b43bda8-d721-42a6-bf54-9e1e771093c2",
+            "household_id": "6ab6c4ae-a77b-477e-8a32-e070094192a8",
+            "room": "c4a79b41-cb31-49c6-892f-3b518343d091",
+            "groups": [
+                "ec25ee05-f454-4240-a6ee-2816e73b4c87"
+            ],
+            "capabilities": [
+                {
+                    "reportable": false,
+                    "retrievable": true,
+                    "type": "devices.capabilities.color_setting",
+                    "parameters": {
+                        "color_model": "hsv",
+                        "temperature_k": {
+                            "min": 2700,
+                            "max": 6500
+                        }
+                    },
+                    "state": {
+                        "instance": "temperature_k",
+                        "value": 6500
+                    },
+                    "last_updated": 1700571418.8478582
+                },
+                {
+                    "reportable": false,
+                    "retrievable": true,
+                    "type": "devices.capabilities.on_off",
+                    "parameters": {
+                        "split": false
+                    },
+                    "state": {
+                        "instance": "on",
+                        "value": false
+                    },
+                    "last_updated": 1700572919.95155
+                },
+                {
+                    "reportable": false,
+                    "retrievable": true,
+                    "type": "devices.capabilities.range",
+                    "parameters": {
+                        "instance": "brightness",
+                        "unit": "unit.percent",
+                        "random_access": true,
+                        "looped": false,
+                        "range": {
+                            "min": 1,
+                            "max": 100,
+                            "precision": 11
+                        }
+                    },
+                    "state": {
+                        "instance": "brightness",
+                        "value": 100
+                    },
+                    "last_updated": 1698754371.6687284
+                },
+                {
+                    "reportable": false,
+                    "retrievable": false,
+                    "type": "devices.capabilities.mode",
+                    "parameters": {
+                        "instance": "thermostat",
+                        "modes": [
+                            {
+                                "value": "heat"
+                            },
+                            {
+                                "value": "cool"
+                            },
+                            {
+                                "value": "auto"
+                            },
+                            {
+                                "value": "dry"
+                            },
+                            {
+                                "value": "fan_only"
+                            },
+                            {
+                                "value": "preheat"
+                            }
+                        ]
+                    },
+                    "state": null,
+                    "last_updated": 0.0
+                }
+            ],
+            "properties": []
+        }
+    ],
+    "scenarios": [],
+    "households": [
+        {
+            "id": "6ab6c4ae-a77b-477e-8a32-e070094192a8",
+            "name": "Мой дом",
+            "type": ""
+        }
+    ]
+}
